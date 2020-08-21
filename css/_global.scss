@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0 0;
+  font-family: "Libre Caslon Display";
+  font-weight: 400;
+  font-size: 16px;
+}
+.clear {
+  clear: both;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+p {
+  padding: 0 0;
+  margin: 15px auto;
+  font-size: 1.2em;
+}
+h1 {
+  font-family: "Libre Caslon Display";
+}
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+div {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.section {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.main-section {
+  max-width: 1230px;
+  margin: 50px auto;
+}
+.popup-btn {
+  border-radius: 0.5em;
+  background: rgb(85, 143, 58);
+  text-align: center;
+  padding: 0 10px;
+}
+.title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.title2 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+}
+.text {
+  text-align: justify;
+  font-size: 1.2em;
+  word-break: break-word;
+}
+.info {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 18px;
+  font-family: "Libre Caslon Display", serif;
+}

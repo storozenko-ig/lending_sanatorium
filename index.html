@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanatorium</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper-top section">
+        <div class="header__wrapper-logo">
+          <img src="images/header-logo.png" alt="" />
+        </div>
+        <div class="header__wrapper-menu">
+          <nav class="scroll">
+            <ul class="menu">
+              <li class="menu-item"><a href="#sanatorium">О САНАТОРИИ</a></li>
+              <li class="menu-item"><a href="#about">ОТЗЫВЫ</a></li>
+              <li class="menu-item"><a href="#contact">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__wrapper-callback">
+          <button class="header-top-btn popup-btn">Перезвоните мне</button>
+        </div>
+        <div class="popup-form">
+          <div class="popup-form-inner">
+            <div class="popur-form-closed"></div>
+            <div class="popur-form-title"><span>Оставить заявку</span></div>
+            <form action="/" class="form">
+              <div class="form-filds">
+                <div class="fild-contener">
+                  <div class="fild-error">
+                    <span class="fild-error-one"></span>
+                  </div>
+                  <div class="fild">
+                    <input type="text" placeholder="Введите имя" class="input-all" data-validatio="name" />
+                  </div>
+                </div>
+                <div class="fild-contener">
+                  <div class="fild-error">
+                    <span class="fild-error-two"></span>
+                  </div>
+                  <div class="fild">
+                    <input type="text" placeholder="Ваш телефон: xxx-xx-xx" class="input-all" data-validatio="phone" />
+                  </div>
+                </div>
+                <div class="fild-contener">
+                  <div class="fild-error">
+                    <span class="fild-error-three"></span>
+                  </div>
+                  <div class="fild">
+                    <input type="text" placeholder="Ваш mail@mail.ru" class="input-all" data-validatio="email" />
+                  </div>
+                </div>
+                <div class="fild-contener-bth">
+                  <button>Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="header__wrapper-phone">
+          <div class="phone-icon"><img src="images/icon-phone.png" alt="" /></div>
+          <p class="phone-number"><a href="tel:87011702598">8(701)170-25-98</a></p>
+        </div>
+      </div>
+      <div class="header__wallpaper">
+        <div class="header__wrapper-bottom section">
+          <div class="header__wrapper-bottom-title">
+            <h1>
+              Санаторий <br />
+              «Aрай Deluxe Thermal Resort»
+            </h1>
+          </div>
+          <div class="header__wrapper-bottom-subtitle">
+            <p>Мы принимаем заказы на бронь с разных городов Казахстана, с Ташкента и некоторых городов России</p>
+          </div>
+          <div class="header__wrapper-bottom-callback">
+            <button class="header-bottom-btn popup-btn">Забронировать сейчас</button>
+          </div>
+          <div class="header__wrapper-bottom-info">
+            <span>Работаем 24 часа без выходных и праздников</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="sanatorium" class="sanatorium main-section">
+        <div class="sanatorium__wrapper">
+          <div class="sanatorium__wrapper-content">
+            <div class="content__title title">
+              <h3>О санатории</h3>
+            </div>
+            <div class="content__text text">
+              <p>
+                Оздоровительный комплекс Aray Deluxe Thermal Resort( Арай Делюкс Термал Ресорт) расположен в ЮКО, городе Сарыагаш, минеральный курорт в 130 км
+                от города Шымкент и в 14 км от города Ташкент. Предоставляются медицинские услуги. На территории так же расположены ресторан, кинотеатр, бары,
+                бизнес-центр.
+              </p>
+              <p>
+                Мы принимаем заказы на бронь с разных городов Казахстана, Ташкента и некоторых городов России. Далее мы связываемся с Вами по мобильному
+                телефону или WatsApp и оформляем все необходимые документы. Опытные менеджеры помогут подобрать вам оптимальный номер, а наши таксисты встретят
+                Вас в аэропорту или на вокзале. Мы поможем Вам разместиться в нашем замечательном санатории.
+              </p>
+            </div>
+          </div>
+          <div class="sanatorium__wrapper-gallery">
+            <div class="slider-item gl-item">
+              <img src="images/sanatorium-pictur-1.jpg" alt="" />
+            </div>
+            <div class="slider-item gl-item"><img src="images/sanatorium-pictur-2.jpg" alt="" /></div>
+            <div class="slider-item gl-item"><img src="images/sanatorium-pictur-3.jpg" alt="" /></div>
+            <div class="slider-item gl-item"><img src="images/sanatorium-pictur-4.jpg" alt="" /></div>
+            <div class="slider-item gl-item"><img src="images/sanatorium-pictur-5.jpg" alt="" /></div>
+            <div class="slider-item gl-item"><img src="images/sanatorium-pictur-6.jpg" alt="" /></div>
+          </div>
+          <div class="popup_img">
+            <div class="preload"></div>
+            <img class="popup_img-hide" src="images/sanatorium-pictur-1.jpg" alt="" />
+            <div class="popup_img-prev btn-gallery"></div>
+            <div class="popup_img-next btn-gallery"></div>
+            <div class="popup_img-wrap">
+              <img src="images/sanatorium-pictur-1.jpg" alt="" />
+              <div class="popup_img-closed" data-title="закрыть"></div>
+            </div>
+          </div>
+          <div class="sanatorium__wrapper-callback callback">
+            <div class="callback-title title2">
+              <span>Оставьте заявку на сайте, и наши менеджеры помогут подобрать номер!</span>
+            </div>
+            <div class="callback-btn">
+              <button class="btn popup-btn">Оставить заявку</button>
+            </div>
+            <div class="callback-info info">
+              <span>Звоните по телефону 8 (701) 170-25-98 или оставьте заявку на сайте</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sanatorium__we main-section">
+        <div class="sanatorium__we-wrapper">
+          <div class="sanatorium__we-wrapper-content">
+            <div class="content__title title">
+              <h3>Почему мы?</h3>
+            </div>
+            <div class="content__subtitle info">
+              <span>Наши преимущества перед другими санаториями</span>
+            </div>
+          </div>
+          <div class="sanatorium__we-wrapper-grafica">
+            <div class="contener-icon">
+              <img src="images/we-icon-1.png" alt="" />
+              <h4>КАЧЕСТВО ОБСЛУЖИВАНИЯ</h4>
+              <p>Мы предлагаем самый высокий уровень обслуживания. Поможем подобрать номер, предоставим такси и ответим на все вопросы</p>
+            </div>
+            <div class="contener-icon">
+              <img src="images/we-icon-2.png" alt="" />
+              <h4>МЕДИЦИНСКИЕ УСЛУГИ</h4>
+              <p>Наш санаторий предлагает целый перечень медицинских услуг, часть из которых уже включена в стоимость номера</p>
+            </div>
+            <div class="contener-icon">
+              <img src="images/we-icon-3.png" alt="" />
+              <h4>ПРЕМИУМ НОМЕРА</h4>
+              <p>У нас имеются элитные премиум номера, в которых вы найдете все что нужно для отдыха и оздоровления</p>
+            </div>
+          </div>
+          <div class="sanatorium__we-wrapper-swimming_pool">
+            <div class="swimming_pool-title title2">
+              <span>Также в нашем санатории имеется современный бассейн, оборудованный всем необходимым</span>
+            </div>
+            <div class="swimming_pool-picture">
+              <div class="swimming_pool-slider-item gl-item"><img src="images/swimming_pool-pictur-1.jpg" alt="" /></div>
+              <div class="swimming_pool-slider-item gl-item"><img src="images/swimming_pool-pictur-2.jpg" alt="" /></div>
+              <div class="swimming_pool-slider-item gl-item"><img src="images/swimming_pool-pictur-3.jpg" alt="" /></div>
+            </div>
+            <div class="popup-zoom_img">
+              <div class="preload-zoom"></div>
+              <img class="popup-zoom_img-hide" src="" alt="" />
+              <div class="popup-zoom_img-prev btn-gallery-zoom"></div>
+              <div class="popup-zoom_img-next btn-gallery-zoom"></div>
+              <div class="popup-zoom_img-wrap">
+                <img src="" alt="" />
+                <div class="popup-zoom_img-closed"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rooms main-section">
+        <div class="rooms__wrapper">
+          <div class="rooms__wrapper-content">
+            <div class="content__title title">
+              <h3>Наши номера</h3>
+            </div>
+            <div class="room-item">
+              <div class="room-item-general"><img src="images/room-1-pictur-1.jpg" alt="" /></div>
+              <div class="room-item-extra_img">
+                <div class="room-img ro-item"><img src="images/room-1-pictur-1.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-1-pictur-2.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-1-pictur-3.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-1-pictur-4.jpg" alt="" /></div>
+              </div>
+              <div class="room-item-options">
+                <div class="room-name"><span>Номер Royal Suit</span></div>
+                <div class="room-text">
+                  <p>
+                    250 кв/м, сауна, джакузи, тренажерный зал, столовая, кухня, гостиная, спальня, рабочий кабинет и спальная комната для Вашего обслуживающего
+                    персонала. Во всех номерах имеется плазменный телевизор со спутниковым телевидением, телефон, мини-бар, кондиционер, индивидуальный сейф и
+                    туалетные принадлежности.
+                  </p>
+                </div>
+                <div class="room-price"><span>Номер на 1-го 190 000 тг. за 1 сутки</span></div>
+                <div class="room-subprice ro-info"><span>Мы принимаем заказы на бронь с разных городов Казахстана, Ташкента и РФ.</span></div>
+                <div class="room-reservation"><button class="reservation-btn popup-btn">Оставить заявку</button></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="room-item">
+              <div class="room-item-general"><img src="images/room-2-pictur-1.jpg" alt="" /></div>
+              <div class="room-item-extra_img">
+                <div class="room-img ro-item"><img src="images/room-2-pictur-1.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-2-pictur-2.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-2-pictur-3.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-2-pictur-4.jpg" alt="" /></div>
+              </div>
+              <div class="room-item-options">
+                <div class="room-name"><span>Номер Premium Deluxe </span></div>
+                <div class="room-text">
+                  <p>
+                    Бальнео- и физиопроцедуры и консультации врачей Завтрак, обед, полдник, ужин.
+                  </p>
+                  <p>
+                    70 кв/м, лоджия с джакузи, спальня, гостиная, душевая, ванная комната, двуспальная кровать, большой бар.Во всех номерах имеется плазменный
+                    телевизор со спутниковым телевидением, телефон, мини-бар, кондиционер, индивидуальный сейф и туалетные принадлежности.
+                  </p>
+                </div>
+                <div class="room-price">
+                  <span>Номер на 2-их 93 000 тг. в сутки</span>
+                  <span>Номер на 1-го 65 000 тг. в сутки</span>
+                </div>
+                <div class="room-subprice ro-info"><span>Мы принимаем заказы на бронь с разных городов Казахстана, Ташкента и РФ.</span></div>
+                <div class="room-reservation"><button class="reservation-btn popup-btn">Оставить заявку</button></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="room-item">
+              <div class="room-item-general"><img src="images/room-3-pictur-1.jpg" alt="" /></div>
+              <div class="room-item-extra_img">
+                <div class="room-img ro-item"><img src="images/room-3-pictur-1.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-3-pictur-2.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-3-pictur-3.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-3-pictur-4.jpg" alt="" /></div>
+              </div>
+              <div class="room-item-options">
+                <div class="room-name"><span>Номер Premium Luxe</span></div>
+                <div class="room-text">
+                  <p>
+                    Бальнео- и физиопроцедуры и консультации врачей Завтрак, обед, полдник, ужин.
+                  </p>
+                  <p>
+                    50 кв/м, ванная комната, спальная. Во всех номерах имеется плазменный телевизор со спутниковым телевидением, телефон, мини-бар, кондиционер,
+                    индивидуальный сейф и туалетные принадлежности.
+                  </p>
+                </div>
+                <div class="room-price"><span>Номер на 1-го 52 000 тг. за 1 сутки</span></div>
+                <div class="room-subprice ro-info"><span>Мы принимаем заказы на бронь с разных городов Казахстана, Ташкента и РФ.</span></div>
+                <div class="room-reservation"><button class="reservation-btn popup-btn">Оставить заявку</button></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="room-item">
+              <div class="room-item-general"><img src="images/room-4-pictur-1.jpg" alt="" /></div>
+              <div class="room-item-extra_img">
+                <div class="room-img ro-item"><img src="images/room-4-pictur-1.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-4-pictur-2.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-4-pictur-3.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-4-pictur-4.jpg" alt="" /></div>
+              </div>
+              <div class="room-item-options">
+                <div class="room-name"><span>Номер Premium Double</span></div>
+                <div class="room-text">
+                  <p>
+                    Бальнео- и физиопроцедуры и консультации врачей Завтрак, обед, полдник, ужин.
+                  </p>
+                  <p>
+                    30 кв/м (общая полщадь), ванная комната, спальная.Во всех номерах имеется плазменный телевизор со спутниковым телевидением, телефон,
+                    мини-бар, кондиционер, индивидуальный сейф и туалетные принадлежности.
+                  </p>
+                </div>
+                <div class="room-price"><span>Номер на 1-го 52 000 тг. за 1 сутки</span></div>
+                <div class="room-subprice ro-info"><span>Номер на две персоны, стоимость указана на две персоны.</span></div>
+                <div class="room-reservation"><button class="reservation-btn popup-btn">Оставить заявку</button></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="room-item">
+              <div class="room-item-general"><img src="images/room-5-pictur-1.jpg" alt="" /></div>
+              <div class="room-item-extra_img">
+                <div class="room-img ro-item"><img src="images/room-5-pictur-1.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-5-pictur-2.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-5-pictur-3.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-5-pictur-4.jpg" alt="" /></div>
+              </div>
+              <div class="room-item-options">
+                <div class="room-name"><span>Номер Premium</span></div>
+                <div class="room-text">
+                  <p>
+                    Бальнео- и физиопроцедуры и консультации врачей Завтрак, обед, полдник, ужин.
+                  </p>
+                  <p>
+                    В стоимость проживания также входят такие услуги, как: бильярд, кинозал, финская сауна, турецкий хамам, фитнес центр, бассейн (закрытый,
+                    открытый).
+                  </p>
+                </div>
+                <div class="room-price">
+                  <span>Номер на 1-го 37 000 тг. за 1 сутки</span>
+                  <span>Номер на 2-х 54 000 тг. за 1 сутки</span>
+                </div>
+                <div class="room-subprice ro-info"><span>Мы принимаем заказы на бронь с разных городов Казахстана, Ташкента и РФ.</span></div>
+                <div class="room-reservation"><button class="reservation-btn popup-btn">Оставить заявку</button></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="room-item">
+              <div class="room-item-general"><img src="images/room-6-pictur-1.jpg" alt="" /></div>
+              <div class="room-item-extra_img">
+                <div class="room-img ro-item"><img src="images/room-6-pictur-1.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-6-pictur-2.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-6-pictur-3.jpg" alt="" /></div>
+                <div class="room-img ro-item"><img src="images/room-6-pictur-4.jpg" alt="" /></div>
+              </div>
+              <div class="room-item-options">
+                <div class="room-name"><span>Эконом (в отдельном коттедже)</span></div>
+                <div class="room-text">
+                  <p>
+                    Номера Эконом находится в отдельно стоящих коттедах. Оснащение номера: две односпальные кровати или двуспальная кровать, комната отдыха,
+                    телевизор со спутниковым телевидением, холодильник, кондиционер. Санузел и душевая общие на 2 номера.
+                  </p>
+                  <p>В стоимость номера входит: проживание, питание, лечение. Так же дополнительные услуги: бассейн, бильярд, кинозал.</p>
+                </div>
+                <div class="room-price">
+                  <span>Номер на 1-го 35 000 тг. за 1 сутки</span>
+                  <span>С подсилением за 1-го 17 500 тг.</span>
+                </div>
+                <div class="room-subprice ro-info"><span>Мы принимаем заказы на бронь с разных городов Казахстана, Ташкента и РФ.</span></div>
+                <div class="room-reservation"><button class="reservation-btn popup-btn">Оставить заявку</button></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about main-section">
+        <div class="about__wrapper">
+          <div class="about__wrapper-content">
+            <div class="about__title title">
+              <h3>Отзывы</h3>
+            </div>
+            <div class="about-item">
+              <div class="about-item-pictur"><img src="images/about-1.jpg" alt="" /></div>
+              <div class="about-item-text">
+                <div class="text-title"><span>Александр Евсеев</span></div>
+                <div class="text-subtitle">
+                  <p>
+                    Отдыхали с супругой и дочкой с 24 марта по 2 апреля. С самого начала пребывания нас удивил уровень сервиса в арае. Все на высшем уровне.
+                    Лечение суперское, отношение персонала уважительное и внимательное. Питание вкусное и насыщенное. Единственный минус - в период наплыва
+                    гостей в столовой чувствуется хаос. А в остальном очень все понравилось. Отдых суперский!!! Теперь каждый год наверное в арай де люкс будем
+                    ездить!!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="about-item fl-left">
+              <div class="about-item-pictur"><img src="images/about-2.jpg" alt="" /></div>
+              <div class="about-item-text">
+                <div class="text-title"><span>Сбыслава Дорофеева</span></div>
+                <div class="text-subtitle">
+                  <p>
+                    Здравствуйте гости Aray Deluxe. Мне и моей семье посчастливилось погостить в этом замечательном санатории в январе месяце. Так получилось
+                    что я смогла взять отпуск зимой. Мы приехали на своей машине с Алматы. За 5 дней до приезда, я по телефону заброниловала 2 номера на 4
+                    человека. Мы приехали 12 часов ночи, нас встретили у входа, сразу же разместили в наш забронированный номер. Отдых был совмещён с
+                    оздоровлением, очень здесь понравилось, отношение персонала, чистота, комфорт, питание просто отличное: и полезно и в то же время очень
+                    вкусно готовят, я действительно отдохнула. Замечательный санаторий.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="about-item">
+              <div class="about-item-pictur"><img src="images/about-3.jpg" alt="" /></div>
+              <div class="about-item-text">
+                <div class="text-title"><span>Аркадий Лобанов</span></div>
+                <div class="text-subtitle">
+                  <p>
+                    Здравствуйте! Мы с подругой отдыxаем в "Арай де люкс" с 13 по 23 июля 2017 г. Нам все понравилось: лечение, питание, отдыx, проживание,
+                    обслуживание! Все на высшем уровне! Санаторий один из лучшиx в РК. Нет слов одни эмоции! Словами описывать очень долго надо приеxать и
+                    увидеть своими глазами!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="sanatorium__wrapper-callback callback">
+            <div class="callback-title title2">
+              <span>Оставьте заявку на сайте, и наши менеджеры помогут подобрать номер!</span>
+            </div>
+            <div class="callback-btn">
+              <button class="btn popup-btn">Оставить заявку</button>
+            </div>
+            <div class="callback-info info">
+              <span>Звоните по телефону 8 (701) 170-25-98 или оставьте заявку на сайте</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="footer section">
+      <div class="footer__wrapper">
+        <div class="footer__wrapper-top">
+          <div class="footer__wrapper-map">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22462567.988891505!2d48.99458952912927!3d46.58698642902726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a91007ecfca947%3A0x5f7b842fe4b30e1b!2z0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1597882578787!5m2!1sru!2sru"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer__wrapper-contanct">
+            <div class="contanct__title title">
+              <h4>Наши контакты</h4>
+            </div>
+            <div class="contanct__text">
+              <p>Санаторий «Aрай Deluxe Thermal Resort»</p>
+            </div>
+            <div class="contanct__list">
+              <ul class="list">
+                <li>Адрес: Казахстан, г. Сарыагаш</li>
+                <li>Телефон: 87011702598</li>
+                <li>Email: Ismailov_marat@mail.ru</li>
+              </ul>
+            </div>
+            <div class="contanct__subtext">
+              <p>Работаем 24 часа в сутки, без выходных и праздников</p>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footer__wrapper-bottom">
+          <div class="footer__wrapper-logo">
+            <div class="logo"><img src="images/header-logo.png" alt="" /></div>
+          </div>
+          <div class="footer__wrapper-contanct-bottom">
+            <span>Санаторий «Aрай Deluxe Thermal Resort». Казахстан, г. Сарыагаш.</span><br />
+            <span>Телефон: 8(701)170-25-98. Email: Ismailov_marat@mail.ru</span><br />
+            <a class="confidentiality" href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__wrapper-phone-bottom">
+            <span class="footer-phone-number"><a href="tel:87011702598">8(701)170-25-98</a></span
+            ><br />
+            <span class="phone-subnumber">Бронь номеров по телефону</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/fantions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

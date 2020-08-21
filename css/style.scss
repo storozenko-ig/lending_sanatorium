@@ -1,0 +1,352 @@
+@import "local";
+@import "global";
+.popup-form {
+  @include popup_form;
+}
+.popup_img {
+  @include popup_img;
+}
+.popup-zoom_img {
+  @include popup-zoom_img;
+}
+.header__wrapper-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header__wrapper {
+  &-logo {
+    width: 270px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    img {
+      display: block;
+      max-width: 270px;
+    }
+  }
+  &-menu {
+    text-align: left;
+    margin-top: 5px;
+
+    .menu-item {
+      display: inline-block;
+      margin: 0 20px;
+      a {
+        display: block;
+        padding: 7.5px;
+        &:hover {
+          transition: 0.7s ease-in-out;
+          box-shadow: 200px 0 0 0 rgb(172, 204, 32) inset;
+          color: white;
+          border-radius: 0.5em;
+        }
+      }
+    }
+  }
+  &-callback {
+    margin-left: 25px;
+    font-size: 14px;
+    .header-top-btn {
+      max-width: 250px;
+      min-width: 130px;
+      padding: 0 10px;
+      line-height: 35px;
+      color: white;
+      &:hover {
+        @include btn-hover;
+      }
+    }
+  }
+  &-phone {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    .phone-icon {
+      margin-right: 5px;
+      margin: auto;
+      img {
+        max-width: 25px;
+        max-height: 25px;
+      }
+    }
+    .phone-number {
+      font-size: 22px;
+    }
+  }
+}
+.header__wallpaper {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-bd.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  padding: 40px;
+  position: relative;
+}
+.header__wrapper-bottom {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 20px;
+  text-align: center;
+  &-title {
+    font-size: 38px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  &-subtitle {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 120%;
+  }
+  &-callback {
+    margin-bottom: 10px;
+    .header-bottom-btn {
+      font-size: 20px;
+      width: 500px;
+      min-width: 350px;
+      height: 50px;
+      min-height: 30px;
+      line-height: 45px;
+      color: white;
+      &:hover {
+        @include btn-hover;
+      }
+    }
+  }
+  &-info {
+    margin: 5px auto;
+    font-size: 18px;
+    color: white;
+  }
+}
+.sanatorium__wrapper-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.gl-item {
+  width: 400px;
+  height: 325px;
+  margin-top: 5px;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 100%;
+    max-height: 325px;
+  }
+}
+.gl-item:nth-child(2) {
+  margin: 5px 15px;
+}
+.gl-item:nth-child(5) {
+  margin: 5px 15px;
+}
+.callback {
+  text-align: center;
+  margin: 100px 0;
+  &-btn {
+    margin: 10px 0;
+    .btn {
+      width: 450px;
+      height: 60px;
+      line-height: 40px;
+      font-size: 18px;
+      color: white;
+      &:hover {
+        @include btn-hover;
+      }
+    }
+  }
+}
+.sanatorium__we-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../images/sanatorium-wrapp2.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: white;
+  padding-top: 10px;
+}
+.sanatorium__we-wrapper-grafica {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contener-icon {
+  width: 33.33%;
+  text-align: center;
+  padding: 55px;
+  img {
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+  }
+}
+.swimming_pool-title {
+  padding: 0 200px;
+}
+.swimming_pool-picture {
+  display: flex;
+  flex-wrap: wrap;
+}
+.room-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 450px;
+  &-general {
+    float: left;
+    margin-bottom: 15px;
+    max-width: 452px;
+    img {
+      height: 330px;
+    }
+  }
+  &-extra_img {
+    position: absolute;
+    top: 360px;
+    left: 20px;
+    max-width: 452px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    .room-img {
+      width: 24%;
+      cursor: pointer;
+    }
+  }
+  &-options {
+    float: right;
+    width: calc(100% - 480px);
+    .room-name {
+      margin-bottom: 50px;
+      font-size: 22px;
+    }
+    .room-text {
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    .room-price {
+      font-size: 20px;
+    }
+    .room-subprice {
+      font-size: 1.1em;
+      font-style: italic;
+      font-family: "Libre Caslon Display", serif;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.reservation-btn {
+  min-width: 40%;
+  min-height: 25%;
+  line-height: 40px;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    transform: translateX(7px);
+  }
+}
+.about-item {
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e2e2e2;
+  overflow: hidden;
+  &-pictur {
+    float: right;
+    max-width: 330px;
+    max-height: 230px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    text-align: justify;
+    padding: 20px;
+    margin-right: 500px;
+  }
+}
+.text-title {
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #e2e2e2;
+}
+.about__wrapper-content {
+  .fl-left {
+    .about-item-pictur {
+      float: left;
+      margin-right: 30px;
+    }
+    .about-item-text {
+      margin-left: 500px;
+      margin-right: 0;
+    }
+  }
+}
+.footer__wrapper-top {
+  height: 450px;
+  text-align: left;
+}
+.map {
+  float: left;
+  width: 60%;
+  overflow: hidden;
+  iframe {
+    display: block;
+    width: 100%;
+  }
+}
+.footer__wrapper-contanct {
+  background: #f2f2f2;
+  float: right;
+  padding: 40px;
+  width: 40%;
+  height: 100%;
+  display: block;
+  .list {
+    font-size: 1.2em;
+    li {
+      list-style: circle;
+    }
+  }
+  .contanct__subtext {
+    font-style: italic;
+  }
+}
+.footer__wrapper-logo,
+.footer__wrapper-contanct-bottom,
+.footer__wrapper-phone-bottom {
+  float: left;
+  padding-top: 20px;
+}
+.footer__wrapper-logo {
+  width: 25%;
+  .logo {
+    max-width: 250px;
+  }
+}
+.footer__wrapper-contanct-bottom {
+  width: 50%;
+  text-align: left;
+  margin-top: 5px;
+}
+.footer__wrapper-phone-bottom {
+  width: 25%;
+  margin-top: 7px;
+}
+.footer-phone-number {
+  font-size: 1.6em;
+  .phone-subnumber {
+    text-align: center;
+  }
+}
+.confidentiality {
+  border-bottom: 1px dashed black;
+  &:hover {
+    border-bottom: none;
+  }
+}
