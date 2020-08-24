@@ -78,7 +78,6 @@ function galleryWithZoom() {
   });
   document.querySelector(".popup_img-closed").onclick = (e) => {
     form.style.display = "none";
-    arr.length = 0;
   };
 }
 
@@ -97,7 +96,6 @@ function picturZoom() {
   });
   document.querySelector(".popup-zoom_img-closed").onclick = (e) => {
     form.style.display = "none";
-    arr.length = 0;
   };
 }
 
@@ -131,6 +129,17 @@ function smoothScroll() {
     };
   }
 }
+
+document.querySelector(".header__wrapper-mobile_menu").onclick = () => {
+  document.querySelector(".mobile_menu").classList.add("active");
+  document.querySelector(".header__wrapper-logo img").style.display = "none";
+};
+
+document.querySelector(".mobile_menu").onclick = () => {
+  document.querySelector(".mobile_menu").classList.remove("active");
+  document.querySelector(".header__wrapper-logo img").style.display = "block";
+};
+
 openFormCallBack();
 galleryWithZoom();
 picturZoom();

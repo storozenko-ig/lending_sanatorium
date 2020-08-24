@@ -1,0 +1,177 @@
+@media screen and (max-width: 900px) {
+  p {
+    padding: 0 15px;
+    margin: 15px auto;
+    font-size: 1.1em;
+  }
+  .title2 {
+    font-size: 1.4em;
+  }
+  .header__wrapper-mobile_menu {
+    display: block;
+  }
+  .header__wrapper-menu {
+    display: none;
+  }
+  .header__wrapper-logo {
+    margin: 0 50px;
+  }
+  .mobile_menu-logo img {
+    width: 80%;
+  }
+  .active {
+    display: block;
+    width: 50%;
+    left: 0;
+    z-index: 5;
+    max-width: 360px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background: white;
+    box-shadow: 0 0px 20px 4px rgba(0, 0, 0, 0.19), 0 6px 6px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 3% 3% 3%;
+  }
+  .mobile_menu-item {
+    margin: 10px 0;
+    margin-right: 50px;
+    a {
+      display: block;
+      padding: 7.5px;
+      &:hover {
+        transition: 0.7s ease-in-out;
+        box-shadow: 200px 0 0 0 rgb(172, 204, 32) inset;
+        color: white;
+        border-radius: 0.5em;
+      }
+    }
+  }
+  .header__wrapper-bottom {
+    &-title {
+      font-size: 2em;
+    }
+    &-callback {
+      .header-bottom-btn {
+        font-size: 1.2em;
+      }
+    }
+    &-info {
+      font-size: 1.1em;
+    }
+  }
+  .gl-item {
+    margin: 5px 15px;
+  }
+  .contener-icon {
+    padding: 45px;
+  }
+  .contener-icon img {
+    width: 50%;
+    height: 30%;
+  }
+  .swimming_pool-title {
+    padding: 0 70px;
+  }
+  .swimming_pool-slider-item {
+    max-width: 260px;
+  }
+  .room-item-options .room-name {
+    margin-bottom: 25px;
+  }
+  .room-item-general {
+    max-width: 400px;
+  }
+  .room-item-extra_img {
+    top: 350px;
+    max-width: 400px;
+  }
+  .room-item-options {
+    width: calc(100% - 410px);
+  }
+  .reservation-btn {
+    line-height: 30px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .popup-zoom_img-wrap img {
+    min-width: 550px;
+  }
+  .popup_img-wrap img {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  p {
+    padding: 0 5px;
+  }
+  .header__wrapper-logo {
+    margin: 0 30px;
+  }
+  .header__wrapper-bottom-title {
+    font-size: 1.9em;
+  }
+  .gl-item {
+    width: 230px;
+    max-height: 300px;
+  }
+  .contener-icon {
+    padding: 30px;
+  }
+  .reservation-btn {
+    margin-top: 0;
+  }
+  .about-item-text {
+    margin-right: 350px;
+  }
+  .about__wrapper-content {
+    .fl-left {
+      .about-item-text {
+        margin-left: -100px;
+      }
+    }
+  }
+}
+@media screen and(max-width: 750px) {
+  p {
+    padding: 0 10px;
+  }
+  .header__wrapper-bottom-title {
+    font-size: 1.6em;
+  }
+  .header__wrapper-bottom-subtitle {
+    color: white;
+    font-size: 1.2em;
+  }
+  .header__wrapper-logo {
+    margin-right: 30px;
+    margin-left: 0;
+  }
+  .header__wrapper-mobile_menu {
+    margin: 0 10px;
+  }
+  .gl-item {
+    max-width: 205px;
+  }
+  .room-item-general {
+    max-width: 600px;
+    max-height: 450px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .room-item-extra_img {
+    top: 355px;
+    left: 50px;
+    max-width: 600px;
+  }
+  .room-item-options {
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    padding: 0 40px;
+  }
+  .footer__wrapper-contanct {
+    padding: 20px;
+  }
+}

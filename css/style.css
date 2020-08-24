@@ -24,7 +24,7 @@ a {
   text-decoration: none; }
 
 p {
-  padding: 0 0;
+  padding: 0 15px;
   margin: 15px auto;
   font-size: 1.2em; }
 
@@ -66,7 +66,7 @@ img {
   margin-bottom: 5px; }
 
 .title2 {
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 20px 0;
   text-align: center; }
 
@@ -78,7 +78,7 @@ img {
 .info {
   text-align: center;
   margin: 16px 0;
-  font-size: 18px;
+  font-size: 1.2em;
   font-family: "Libre Caslon Display", serif; }
 
 .popup-form {
@@ -282,11 +282,30 @@ img {
   justify-content: center;
   position: relative; }
 
+.header__wrapper-menu {
+  display: block; }
+
+.header__wrapper-mobile_menu,
+.mobile_menu {
+  display: none; }
+
+.header__wrapper-mobile_menu {
+  display: none;
+  background: url("../images/icon-menu.png") no-repeat;
+  background-size: 85%;
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 40px; }
+  .header__wrapper-mobile_menu:hover {
+    transform: rotate(90deg);
+    transition: 500ms ease-in-out; }
+
 .header__wrapper-logo {
   width: 270px;
   text-align: left;
   margin-left: 0;
-  margin-right: auto; }
+  margin-right: auto;
+  display: block; }
   .header__wrapper-logo img {
     display: block;
     max-width: 270px; }
@@ -306,7 +325,7 @@ img {
         border-radius: 0.5em; }
 .header__wrapper-callback {
   margin-left: 25px;
-  font-size: 14px; }
+  font-size: 1.1em; }
   .header__wrapper-callback .header-top-btn {
     max-width: 250px;
     min-width: 130px;
@@ -327,7 +346,7 @@ img {
       max-width: 25px;
       max-height: 25px; }
   .header__wrapper-phone .phone-number {
-    font-size: 22px; }
+    font-size: 1.4em; }
 
 .header__wallpaper {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-bd.jpg") no-repeat;
@@ -342,23 +361,23 @@ img {
   padding: 20px;
   text-align: center; }
   .header__wrapper-bottom-title {
-    font-size: 38px;
+    font-size: 2.3em;
     margin-top: 20px;
     margin-bottom: 5px;
     color: white; }
   .header__wrapper-bottom-subtitle {
     color: white;
-    font-size: 30px;
+    font-size: 1.6em;
     margin-bottom: 10px;
     padding-bottom: 10px;
     line-height: 120%; }
   .header__wrapper-bottom-callback {
     margin-bottom: 10px; }
     .header__wrapper-bottom-callback .header-bottom-btn {
-      font-size: 20px;
+      font-size: 1.3em;
       width: 500px;
       min-width: 350px;
-      height: 50px;
+      padding: 5px 10px;
       min-height: 30px;
       line-height: 45px;
       color: white; }
@@ -367,7 +386,7 @@ img {
         box-shadow: 500px 0 0 0 #accc20 inset; }
   .header__wrapper-bottom-info {
     margin: 5px auto;
-    font-size: 18px;
+    font-size: 1.2em;
     color: white; }
 
 .sanatorium__wrapper-gallery {
@@ -377,7 +396,7 @@ img {
 
 .gl-item {
   width: 400px;
-  height: 325px;
+  max-height: 325px;
   margin-top: 5px;
   cursor: pointer; }
   .gl-item img {
@@ -398,9 +417,9 @@ img {
     margin: 10px 0; }
     .callback-btn .btn {
       width: 450px;
-      height: 60px;
+      padding: 5px 10px;
       line-height: 40px;
-      font-size: 18px;
+      font-size: 1.2em;
       color: white; }
       .callback-btn .btn:hover {
         transition: 0.7s ease-in-out;
@@ -411,7 +430,7 @@ img {
   background-size: cover;
   background-position: top center;
   color: white;
-  padding-top: 10px; }
+  padding: 10px 0; }
 
 .sanatorium__we-wrapper-grafica {
   display: flex;
@@ -443,7 +462,7 @@ img {
     margin-bottom: 15px;
     max-width: 452px; }
     .room-item-general img {
-      height: 330px; }
+      max-height: 330px; }
   .room-item-extra_img {
     position: absolute;
     top: 360px;
@@ -460,12 +479,12 @@ img {
     width: calc(100% - 480px); }
     .room-item-options .room-name {
       margin-bottom: 50px;
-      font-size: 22px; }
+      font-size: 1.4em; }
     .room-item-options .room-text {
       text-align: justify;
       margin-bottom: 30px; }
     .room-item-options .room-price {
-      font-size: 20px; }
+      font-size: 1.3em; }
     .room-item-options .room-subprice {
       font-size: 1.1em;
       font-style: italic;
@@ -475,11 +494,11 @@ img {
 
 .reservation-btn {
   min-width: 40%;
-  min-height: 25%;
+  padding: 5px 10px;
   line-height: 40px;
   margin-top: 20px;
   color: white;
-  font-size: 16px; }
+  font-size: 1.1em; }
   .reservation-btn:hover {
     transition: 0.5s ease-in-out;
     transform: translateX(7px); }
@@ -502,7 +521,7 @@ img {
 
 .text-title {
   padding-bottom: 10px;
-  font-size: 22px;
+  font-size: 1.3em;
   font-weight: bold;
   border-bottom: 1px solid #e2e2e2; }
 
@@ -510,7 +529,7 @@ img {
   float: left;
   margin-right: 30px; }
 .about__wrapper-content .fl-left .about-item-text {
-  margin-left: 500px;
+  padding-left: 500px;
   margin-right: 0; }
 
 .footer__wrapper-top {
@@ -568,5 +587,165 @@ img {
   border-bottom: 1px dashed black; }
   .confidentiality:hover {
     border-bottom: none; }
+
+@media screen and (max-width: 900px) {
+  p {
+    padding: 0 15px;
+    margin: 15px auto;
+    font-size: 1.1em; }
+
+  .title2 {
+    font-size: 1.4em; }
+
+  .header__wrapper-mobile_menu {
+    display: block; }
+
+  .header__wrapper-menu {
+    display: none; }
+
+  .header__wrapper-logo {
+    margin: 0 50px; }
+
+  .mobile_menu-logo img {
+    width: 80%; }
+
+  .active {
+    display: block;
+    width: 50%;
+    left: 0;
+    z-index: 5;
+    max-width: 360px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background: white;
+    box-shadow: 0 0px 20px 4px rgba(0, 0, 0, 0.19), 0 6px 6px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 3% 3% 3%; }
+
+  .mobile_menu-item {
+    margin: 10px 0;
+    margin-right: 50px; }
+    .mobile_menu-item a {
+      display: block;
+      padding: 7.5px; }
+      .mobile_menu-item a:hover {
+        transition: 0.7s ease-in-out;
+        box-shadow: 200px 0 0 0 #accc20 inset;
+        color: white;
+        border-radius: 0.5em; }
+
+  .header__wrapper-bottom-title {
+    font-size: 2em; }
+  .header__wrapper-bottom-callback .header-bottom-btn {
+    font-size: 1.2em; }
+  .header__wrapper-bottom-info {
+    font-size: 1.1em; }
+
+  .gl-item {
+    margin: 5px 15px; }
+
+  .contener-icon {
+    padding: 45px; }
+
+  .contener-icon img {
+    width: 50%;
+    height: 30%; }
+
+  .swimming_pool-title {
+    padding: 0 70px; }
+
+  .swimming_pool-slider-item {
+    max-width: 260px; }
+
+  .room-item-options .room-name {
+    margin-bottom: 25px; }
+
+  .room-item-general {
+    max-width: 400px; }
+
+  .room-item-extra_img {
+    top: 350px;
+    max-width: 400px; }
+
+  .room-item-options {
+    width: calc(100% - 410px); }
+
+  .reservation-btn {
+    line-height: 30px; }
+
+  body {
+    font-size: 14px; }
+
+  .popup-zoom_img-wrap img {
+    min-width: 550px; }
+
+  .popup_img-wrap img {
+    min-width: 400px; } }
+@media screen and (max-width: 800px) {
+  p {
+    padding: 0 5px; }
+
+  .header__wrapper-logo {
+    margin: 0 30px; }
+
+  .header__wrapper-bottom-title {
+    font-size: 1.9em; }
+
+  .gl-item {
+    width: 230px;
+    max-height: 300px; }
+
+  .contener-icon {
+    padding: 30px; }
+
+  .reservation-btn {
+    margin-top: 0; }
+
+  .about-item-text {
+    margin-right: 350px; }
+
+  .about__wrapper-content .fl-left .about-item-text {
+    margin-left: -100px; } }
+@media screen and (max-width: 750px) {
+  p {
+    padding: 0 10px; }
+
+  .header__wrapper-bottom-title {
+    font-size: 1.6em; }
+
+  .header__wrapper-bottom-subtitle {
+    color: white;
+    font-size: 1.2em; }
+
+  .header__wrapper-logo {
+    margin-right: 30px;
+    margin-left: 0; }
+
+  .header__wrapper-mobile_menu {
+    margin: 0 10px; }
+
+  .gl-item {
+    max-width: 205px; }
+
+  .room-item-general {
+    max-width: 600px;
+    max-height: 450px;
+    width: 100%;
+    margin-left: 30px; }
+
+  .room-item-extra_img {
+    top: 355px;
+    left: 50px;
+    max-width: 600px; }
+
+  .room-item-options {
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    padding: 0 40px; }
+
+  .footer__wrapper-contanct {
+    padding: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

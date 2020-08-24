@@ -53,14 +53,13 @@ function galleryWithZoom() {
   });
   document.querySelector(classFormClosed).onclick = (e) => {
     form.style.display = "none";
-    arr.length = 0;
   };
 }
 
 function btnNext(pleca, slideIndex, arr, rigth) {
   rigth.onclick = (e) => {
     pleca.style.opacity = 0;
-    setTimeout(surfacing, 350, pleca);
+    setTimeout(surfacing, 250, pleca);
     if (slideIndex < arr.length - 1) slideIndex++;
     else slideIndex = 0;
     pleca.src = arr[slideIndex].src;
@@ -97,7 +96,6 @@ function picturZoom() {
   });
   document.querySelector(classFormClosed).onclick = (e) => {
     form.style.display = "none";
-    arr.length = 0;
   };
 }
 
