@@ -97,6 +97,31 @@
     }
   }
 }
+.mobile_menu {
+  max-width: 360px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  left: -360px;
+  top: 0;
+  margin-top: 0;
+  background: white;
+  box-shadow: 0 0px 20px 4px rgba(0, 0, 0, 0.19), 0 6px 6px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0 3% 3% 3%;
+  display: block !important;
+  transition: 0.5s all;
+  overflow: auto;
+  opacity: 0;
+  z-index: 30;
+}
+.active {
+  display: none;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  z-index: 9999;
+}
+
 .header__wallpaper {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-bd.jpg") no-repeat;
   background-size: cover;
