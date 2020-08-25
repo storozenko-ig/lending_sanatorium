@@ -132,7 +132,7 @@ function smoothScroll() {
 
 document.querySelector(".header__wrapper-mobile_menu").onclick = () => {
   document.querySelector(".mobile_menu").classList.add("active");
-  document.querySelector(".header__wrapper-logo img").style.display = "none";
+  // document.querySelector(".header__wrapper-logo img").style.display = "none";
 };
 
 document.querySelector(".mobile_menu").onclick = () => {
